@@ -1,0 +1,77 @@
+/* ---------- GENERELT ---------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Gill Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  margin-top: 20px; /* luft over headeren */
+  width: 100%;
+}
+
+ul.nav {
+  list-style: none;
+  margin: 0;
+  padding: 35px 0;
+  background-color: #0f2e5c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+/* Logo */
+ul.nav li.logo {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Links */
+ul.nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+ul.nav a.hero-text {
+  color: white;
+  text-decoration: none;
+  padding: 14px 16px;
+  display: inline-block;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+}
+
+ul.nav a:hover {
+  text-decoration: underline;
+  background: #06285a;
+}
+
+/* ---------- RESPONSIV ---------- */
+@media (max-width: 700px) {
+  ul.nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  ul.nav li.logo {
+    position: static;
+    transform: none;
+    margin-bottom: 10px;
+  }
+
+  ul.nav li {
+    margin: 5px 0;
+  }
+
+  .hero-text {
+    margin-top: 80px;
+  }
+}
