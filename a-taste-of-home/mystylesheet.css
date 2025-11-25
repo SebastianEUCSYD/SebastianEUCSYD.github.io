@@ -11,7 +11,7 @@ html, body {
 
 /* ---------- HEADER ---------- */
 header {
-  margin-top: 20px; /* luft over headeren */
+  margin-top: 0px; /* luft over headeren */
   width: 100%;
 }
 
@@ -85,3 +85,142 @@ body {
 main {
   flex: 1;
 }
+
+/* ---------- KOLONNER (generisk) ---------- */
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+.columns .col {
+  background: rgba(255,255,255,0.05);
+  padding: 12px;
+  border-radius: 6px;
+}
+
+/* ---------- FOOTER GRID ---------- */
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr; /* Default: en kolonne på smalle skærme */
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  align-items: start;
+  justify-content: center; /* Centrerer grid-beholderen */
+}
+.footer-col {
+  text-align: center; /* Default: centreret på små skærme */
+}
+.footer-col h4 {
+  margin: 0 0 8px 0;
+  font-size: 1.05rem;
+}
+.footer-col p {
+  margin: 4px 0;
+  color: white;
+}
+.footer-bottom {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 0.95rem;
+}
+
+/* Responsivt: stacking på smalle skærme */
+@media (max-width: 700px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+/* På større skærme: 3-kolonne-layout med center-kolonne faste bredde/autofit */
+@media (min-width: 700px) {
+  .footer-content {
+    grid-template-columns: 1fr auto 1fr; /* venstre - center - højre */
+    justify-items: stretch;
+    align-items: start;
+  }
+  /* Specifik placering og justering af hver kolonne */
+  .footer-content .footer-col:nth-child(1) {
+    justify-self: start;
+    text-align: left;
+  }
+  .footer-content .footer-col:nth-child(2) {
+    justify-self: center;
+    text-align: center;
+  }
+  .footer-content .footer-col:nth-child(3) {
+    justify-self: end;
+    text-align: right;
+  }
+  .footer-bottom {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+}
+
+/* ---------- CONTACT / BOOKING FORM ---------- */
+.contact-section {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+}
+.contact-intro {
+  color: white;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+.contact-info {
+  color: white;
+  padding: 12px;
+}
+.contact-form {
+  background: rgba(255,255,255,0.03);
+  padding: 18px;
+  border-radius: 8px;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #fff;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 4px;
+  background: rgba(255,255,255,0.02);
+  color: white;
+}
+.contact-form textarea { min-height: 100px; resize: vertical; }
+.contact-form .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.contact-form button {
+  background: #e19d41;
+  color: #0f2e5c;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.contact-form button:hover { opacity: 0.95; }
+
+@media (min-width: 800px) {
+  .contact-grid { grid-template-columns: 1fr 1fr; }
+}
+
