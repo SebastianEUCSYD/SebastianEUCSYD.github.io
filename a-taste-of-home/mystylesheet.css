@@ -7,6 +7,8 @@ html, body {
   scroll-behavior: smooth;
 }
 
+
+
 /* ---------- HEADER ---------- */
 header {
   margin-top: 20px; /* luft over headeren */
@@ -44,34 +46,42 @@ ul.nav a.hero-text {
   text-decoration: none;
   padding: 14px 16px;
   display: inline-block;
-  border: 1px solid #ffffff;
+  border: 2px solid #e19d41;
   border-radius: 20px;
 }
 
 ul.nav a:hover {
   text-decoration: underline;
-  background: #06285a;
+  background: #020e20;
 }
 
-/* ---------- RESPONSIV ---------- */
-@media (max-width: 700px) {
-  ul.nav {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-  }
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #003366; /* Mørk blå */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  margin-top: auto; /* Skubber footeren til bunden */
+  position: relative;
+  bottom: 0;
+}
 
-  ul.nav li.logo {
-    position: static;
-    transform: none;
-    margin-bottom: 10px;
-  }
+footer a {
+  color: #69c9d0; /* Lys blå farve til links */
+  text-decoration: none;
+  transition: 0.3s;
+}
 
-  ul.nav li {
-    margin: 5px 0;
-  }
+footer a:hover {
+  text-decoration: underline;
+}
 
-  .hero-text {
-    margin-top: 80px;
-  }
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
 }
