@@ -23,100 +23,34 @@
     </header>
 
     <main>
-        <div style="color: white; text-align: center; margin-top: 40px;">
+        <div style="color: white; text-align: center; margin-top: 120px;">
             <h1>A taste of home</h1>
             <h3>Your home away</h3>
         </div>
+    </main>
 
-        <section class="contact-section">
-            <p class="contact-intro">Brug formularen til at booke bord eller kontakt os direkte. Vi bekræfter din reservation via e-mail eller telefon.</p>
-
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h3>Kontaktinformation</h3>
-                    <p><strong>Adresse:</strong> Vejnavn 12, 8000 Aarhus C</p>
-                    <p><strong>Telefon:</strong> 12 34 56 78</p>
-                    <p><strong>Email:</strong> <a href="mailto:info@tasteofhome.example">info@tasteofhome.example</a></p>
-                    <h4>Åbningstider</h4>
-                    <p>Man-Fre: 10:00 - 18:00</p>
-                    <p>Lør-Søn: 12:00 - 22:00</p>
-                    <h4>Praktisk info</h4>
-                    <p>Ved større selskaber (8+ personer), kontakt os venligst direkte på telefon.</p>
-                    <p>Ønsker du særlige hensyn (vegetar, allergi), skriv det i bemærkninger.</p>
-                </div>
-
-                <div style="background-color:#0f2e5c; "class="contact-form">
-                    <h3>Book et bord</h3>
-                    <!-- Erstat action med din formular-backend (fx Formspree, Netlify Forms eller din server) -->
-                    <form action="#" method="POST" novalidate>
-                        <label for="name">Fulde navn</label>
-                        <input id="name" name="name" type="text" required placeholder="Dit navn">
-
-                        <label for="email">Email</label>
-                        <input id="email" name="email" type="email" required placeholder="navn@eksempel.dk">
-
-                        <label for="phone">Telefon</label>
-                        <input id="phone" name="phone" type="tel" placeholder="12 34 56 78">
-
-                        <div class="form-row">
-                            <div>
-                                <label for="date">Dato</label>
-                                <input id="date" name="date" type="date" required>
-                            </div>
-                            <div>
-                                <label for="time">Tid</label>
-                                <input id="time" name="time" type="time" required>
-                            </div>
-                        </div>
-
-                        <label for="people">Antal personer</label>
-                        <select id="people" name="people" required>
-                            <option value="">Vælg...</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9+</option>
-                        </select>
-
-                        <label for="notes">Bemærkninger (allergier, ønsker)</label>
-                        <textarea id="notes" name="notes" placeholder="Skriv eventuelle ønsker eller allergier her..."></textarea>
-
-                        <button type="submit">Send bookingforespørgsel</button>
-                    </form>
-
-                </div>
+    <footer>
+        <div class="footer-content">
+            <div style="text-align: center;" class="footer-col">
+                <h4>Åbningstider</h4>
+                <p>Man-Fre: 10:00 - 18:00</p>
+                <p>Lør-Søn: 12:00 - 22:00</p>
             </div>
-        </section>
-
-        </main>
-
-        <footer>
-            <div class="footer-content">
-                <div style="text-align: center;"class="footer-col">
-                    <h4>Åbningstider</h4>
-                    <p>Man-Fre: 10:00 - 18:00</p>
-                    <p>Lør-Søn: 12:00 - 22:00</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Links</h4>
-                    <p><a href="menu.html">Menu</a></p>
-                    <p><a href="om-os.html">Om os</a></p>
-                </div>
-                <div style="text-align: center;"class="footer-col">
-                    <h4>Kontakt</h4>
-                    <p>Email: info@tasteofhome.example</p>
-                    <p>Telefon: 12 34 56 78</p>
-                </div>
-                <div class="footer-bottom">
-                    <p class="copyright">© 2025 A Taste of Home - All rights not reserved</p>
-                </div>
+            <div class="footer-col">
+                <h4>Links</h4>
+                <p><a href="menu.html">Menu</a></p>
+                <p><a href="om-os.html">Om os</a></p>
             </div>
-        </footer>
+            <div style="text-align: center;" class="footer-col">
+                <h4>Kontakt</h4>
+                <p>Email: info@tasteofhome.example</p>
+                <p>Telefon: 12 34 56 78</p>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 A Taste of Home - All rights not reserved</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
