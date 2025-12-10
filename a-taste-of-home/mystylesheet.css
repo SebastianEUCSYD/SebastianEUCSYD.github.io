@@ -224,3 +224,18 @@ main {
   .contact-grid { grid-template-columns: 1fr 1fr; }
 }
 
+/* Find-us map styling */
+.find-us .map-wrap {
+  width: 100%;
+  height: 260px;
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.find-us .map-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.contact-col { padding: 12px; }
+
