@@ -3,7 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: "Gill Sans", sans-serif;
+  font-family: "Times New Roman", Times, serif;
   scroll-behavior: smooth;
 }
 
@@ -238,4 +238,23 @@ main {
   border: 0;
 }
 .contact-col { padding: 12px; }
+
+/* ---------- CTA BUTTONS ---------- */
+.btn-cta {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 8px;
+  background-color: #e19d41;
+  color: #0f2e5c;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 700;
+  transition: 0.3s;
+  border: 2px solid #e19d41;
+}
+.btn-cta:hover {
+  background-color: #0f2e5c;
+  color: #e19d41;
+  border-color: #e19d41;
+}
 
