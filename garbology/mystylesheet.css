@@ -8,7 +8,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #0f2e5c;
+  background-color: #242628;
   color: white;
 
   display: flex;
@@ -28,8 +28,8 @@ a {
 /* ---------- NAVIGATION ---------- */
 
 header {
-  background: #0b2142;
-  border-bottom: 2px solid #173d73;
+  background: #01060e;
+  border-bottom: 2px solid #01060e;
 }
 
 .nav {
@@ -65,7 +65,7 @@ header {
 
 .hero-text:hover {
 
-  background: #173d73;
+  background: #FFD518;
 
 }
 
@@ -120,7 +120,7 @@ header {
   width: 65%;
   margin: auto;
 
-  background: #173d73;
+  background: #171500d8;
 
   padding: 50px;
 
@@ -162,9 +162,9 @@ header {
 
   margin: 10px;
 
-  background: #29b000;
+  background: #FFD518;
 
-  color: #0f2e5c;
+  color: #01060e;
 
   font-weight: bold;
 
@@ -210,7 +210,7 @@ header {
 
 footer {
 
-  background: #08172e;
+  background: #01060e;
 
   margin-top: 80px;
 
@@ -239,7 +239,7 @@ footer {
 
   margin-bottom: 15px;
 
-  color: #29b000;
+  color: #FFD518;
 
 }
 
@@ -343,7 +343,7 @@ text-align:left;
 
 margin-bottom:15px;
 
-color:#29b000;
+color:#FFD518;
 
 }
 
